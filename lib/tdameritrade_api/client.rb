@@ -8,10 +8,12 @@ require 'tdameritrade_api/price_history'
 require 'tdameritrade_api/streamer'
 require 'tdameritrade_api/watchlist'
 require 'tdameritrade_api/balances_and_positions'
+require 'tdameritrade_api/transaction_history'
 
 module TDAmeritradeApi
   class Client
     include PriceHistory
+    include TransactionHistory
     include Streamer
     include Watchlist
     include BalancesAndPositions
