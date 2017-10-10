@@ -2,8 +2,8 @@ module TDAmeritradeApi
   module TransactionHistory
     HISTORY_URL='https://apis.tdameritrade.com/apps/100/History'
 
-    def get_transaction_history(account_id)
-      request_params = build_transaction_history_params(account_id)
+    def get_transaction_history(account_id, start_date, end_date, type)
+      request_params = build_transaction_history_params(account_id, start_date, end_date, type)
 
       uri = URI.parse HISTORY_URL
       uri.query = URI.encode_www_form(request_params)
