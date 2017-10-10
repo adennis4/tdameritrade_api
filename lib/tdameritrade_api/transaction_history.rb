@@ -26,13 +26,13 @@ module TDAmeritradeApi
 
     private
 
-    def build_transaction_history_params(account_id)
+    def build_transaction_history_params(account_id, start_date, end_date, type)
       {
         source: @source_id,
         accountid: account_id,
-        start_date: (Date.today - 1.month).strftime('%Y%m%d'),
-        end_date: Date.today.strftime('%Y%m%d'),
-        type: 0
+        start_date: start_date,
+        end_date: end_date,
+        type: type
       }
     end
   end
