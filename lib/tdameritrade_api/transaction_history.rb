@@ -30,8 +30,8 @@ module TDAmeritradeApi
       {
         source: @source_id,
         accountid: account_id,
-        start_date: start_date,
-        end_date: end_date,
+        startdate: start_date,
+        enddate: end_date,
         type: type
       }
     end
