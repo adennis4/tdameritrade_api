@@ -32,7 +32,7 @@ module TDAmeritradeApi
         accountid: account_id,
         start_date: (Date.today - 1.month).strftime('%Y%m%d'),
         end_date: Date.today.strftime('%Y%m%d'),
-        type: [2,3]
+        type: 0
       }
     end
   end
